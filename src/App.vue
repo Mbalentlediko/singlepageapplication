@@ -7,16 +7,21 @@
     <Footer/>
   </div>
 </template>
-  <script>
-import NavBar from './components/NavBar'
-import Footer  from './components/Footer.vue';
-export default{
+
+<script>
+import NavBar from '@/components/NavBar'
+import Footer from '@/components/Footer.vue'
+export default {
   components:{
     NavBar,
     Footer
-
-  }
+  },
+  computed:{
+    jobTitle() {
+     return this.$store.state.jobTitle
+    }
+  },
 }
 </script>
-<style src="./assets/css/style.css">
+<style src="@/assets/css/style.css">
 </style>
