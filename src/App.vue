@@ -19,6 +19,9 @@ export default {
   computed:{
     jobTitle() {
      return this.$store.state.jobTitle
+    },
+    about() {
+      return this.$.store.state.about
     }
   },
 }
