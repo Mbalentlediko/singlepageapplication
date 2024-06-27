@@ -2,7 +2,7 @@
  <div class="wrapper">
   <NavBar/>
   <main class="container-fluid">
-     <rounder-view/> 
+     <router-view/> 
      </main>
     <Footer/>
   </div>

@@ -41,8 +41,8 @@ export default createStore({
   actions: {
     async fetchJobTitle(context) {
       try {
-        let { jobTitle } = await (await axios.get(portfolioURL)).data
-        context.commit("setJobTitle", jobTitle)
+        let { jobtitle } = await (await axios.get(portfolioURL)).data
+        context.commit("setJobTitle", jobtitle)
       } catch (e) { 
         Swal.fire({
           title: "Error",
