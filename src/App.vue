@@ -22,6 +22,9 @@ export default {
     },
     about() {
       return this.$.store.state.about
+    },
+    education() {
+      return this.$.store.state.education
     }
   },
 }
